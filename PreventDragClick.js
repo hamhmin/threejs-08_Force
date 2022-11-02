@@ -1,0 +1,1 @@
+export class PreventDragClick{constructor(e){let t,n,s;this.mouseMoved,e.addEventListener("mousedown",(e=>{t=e.clientX,n=e.clientY,s=Date.now()})),e.addEventListener("mouseup",(e=>{const o=Math.abs(e.clientX-t),a=Math.abs(e.clientY-n),c=Date.now()-s;this.mouseMoved=o+a>10||c>500}))}}
